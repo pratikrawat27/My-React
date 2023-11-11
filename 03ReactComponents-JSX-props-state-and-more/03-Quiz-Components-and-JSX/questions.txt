@@ -1,0 +1,20 @@
+1) From the perspective of a developer: What's one advantage of building a user interface by combining components?
+ANS : Small reusable building blocks.
+
+2) When working with React: How is a new component defined?
+ANS : By creating a function that's return JSX code.
+
+3) What's the purpose of JSX?
+ANS : Its allows you to define the target HTML code inside of your components.
+
+4) Which statement about JSX is TRUE?
+ANS : JSX code is used to define the target UI/HTML code.
+
+5) What does React do with the components you use in the JSX code?
+ANS : It derives a component tree thats then used to perform commands that update the website DOM.
+
+6) How do you typically use custom components?
+ANS : You use custom components like HTML elements inside of JSX code.
+
+7) Which statement about custom components is FALSE?
+ANS : Custom components must be define next to the components that wants to use them.

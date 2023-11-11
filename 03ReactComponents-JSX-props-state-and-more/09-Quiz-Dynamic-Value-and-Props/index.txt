@@ -1,0 +1,24 @@
+1) Which syntax can be used to output dynamic values / JavaScript expressions in JSX?
+ANS : {}
+
+2) Which values can be output as dynamic values in JSX (i.e., between curly braces)?
+ANS : Any valid JS expressions.
+
+3) How should you typically load / use images in React projects?
+ANS : Set the <img> src equal to the path generate via an import statement (that point at the image)
+
+4) How can you assign a dynamic value to an HTML element attribute?
+ANS : Same syntax you use for dynamic value in JSX {}
+
+5) Which core React concept can increase the reusability of React components?
+ANS : Props
+
+6) How do "props" work in React?
+ANS : You can set props ("custom attribute") on components to then extract & use them in the receiving component
+
+7) Which of the following four code examples for setting & extracting props would NOT work as intended?
+I.e., which example will NOT output the text "Priority: 5" on the screen.
+ANS : <MyComponent priority={5}>
+      function MyComponent(priority){
+        return <p>Priority : {priority}</p>
+      }
