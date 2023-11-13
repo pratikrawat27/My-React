@@ -1,0 +1,14 @@
+1) How should you typically store your component functions?
+ANS : Split across multiple file(one component per file)
+
+2) What's the purpose of the special "children" prop?
+ANS : You can pass and use content between your component's opening and closing tag
+
+3) How can you handle user events in React projects?
+ANS : Via the built in onXYZ props (eg : onClick)
+
+4) To execute code upon events, which value must be passed to event props like onClick?
+ANS : A pointer to the function that should be execute (eg : onClick={handleClick})
+
+5) How can you "configure" the execution of an event-dependent function (e.g., define which arguments get passed to it)?
+ANS : By wrapping the function with another function (eg : onClick={() => handleClick(5)})
