@@ -5,6 +5,11 @@ import {CORE_CONCEPTS} from './data.js'
 import TabButton from "./component/TabButton.jsx";
 
 function App() {
+
+  function handleClick(){
+    console.log("Hello")
+  }
+
   return (
     <div>
       <Header />
@@ -23,12 +28,13 @@ function App() {
         <section id="examples">
           <h2>Examples</h2>
           <menu>
-            <TabButton>Components</TabButton>
-            <TabButton>JSX</TabButton>
-            <TabButton>Props</TabButton>
-            <TabButton>State</TabButton>
+            <TabButton click={handleClick}>Components</TabButton>
+            <TabButton click={handleClick}>JSX</TabButton>
+            <TabButton click={handleClick}>Props</TabButton>
+            <TabButton click={handleClick}>State</TabButton>
             {/* <TabButton label="Components" /> */}
           </menu>
+
         </section>
       </main>
     </div>
