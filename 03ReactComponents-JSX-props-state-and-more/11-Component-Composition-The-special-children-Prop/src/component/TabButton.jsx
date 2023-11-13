@@ -12,4 +12,12 @@ function TabButton({children}){
     );
 }
 
+// or
+
+// function TabButton({label}){
+//     return(
+//         <li><button>{label}</button></li>
+//     );
+// }
+
 export default TabButton;
