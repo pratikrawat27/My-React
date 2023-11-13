@@ -6,8 +6,8 @@ import TabButton from "./component/TabButton.jsx";
 
 function App() {
 // Passing Functions as Values to Props
-  function handleClick(){
-    console.log("Hello")
+  function handleClick(selectedButton){
+    console.log(selectedButton)
   }
 
   return (
@@ -28,10 +28,10 @@ function App() {
         <section id="examples">
           <h2>Examples</h2>
           <menu>
-            <TabButton click={handleClick}>Components</TabButton>
-            <TabButton click={handleClick}>JSX</TabButton>
-            <TabButton click={handleClick}>Props</TabButton>
-            <TabButton click={handleClick}>State</TabButton>
+            <TabButton click={() => handleClick("Components")}>Components</TabButton>
+            <TabButton click={() => handleClick("JSX")}>JSX</TabButton>
+            <TabButton click={() => handleClick("Props")}>Props</TabButton>
+            <TabButton click={() => handleClick("State")}>State</TabButton>
             {/* <TabButton label="Components" /> */}
           </menu>
 
