@@ -8,7 +8,12 @@ import { useState } from "react";
 function App() {
   // Passing Functions as Values to Props
   const [selectedTopic, setSelectedTopic] = useState();
-  
+
+  function handleClick(selectedButton) {
+    setSelectedTopic(selectedButton);
+    console.log(selectedButton);
+  }
+
   let tabContent = <p>Please select a Topic.</p>;
   if (selectedTopic) {
     tabContent = (
@@ -21,12 +26,7 @@ function App() {
       </div>
     );
   }
-
-  function handleClick(selectedButton) {
-    setSelectedTopic(selectedButton);
-    console.log(selectedButton);
-  }
-
+  
   return (
     <div>
       <Header />
