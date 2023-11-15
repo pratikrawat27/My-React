@@ -1,0 +1,23 @@
+1) What's the purpose of "State" in React apps?
+ANS : Its data that, when changed, cause React to re-evaluate a component. 
+
+2) There are two "Rules of Hooks".
+Which of the following statements is NOT TRUE according to those rules?
+ANS : You must not call React Hooks next to other Hooks.
+
+3)Will the following code work?
+import { useState } from 'react';
+ 
+function SomeComponent() {
+  const [selected, setSelected] = useState(false);
+ 
+  function handleClick() {
+    const [selected, setSelected] = useState(true);
+  }
+ 
+  return <button onClick={handleClick}>Select</button>
+}
+ANS : No, it will throw an error because you can't have multiple hooks inside one functional component.
+
+4) What's the idea behind "derived state" / "computed values"?
+ANS : Computed values are values that shouldn't be managed as separate state since they can be derived form other state.
