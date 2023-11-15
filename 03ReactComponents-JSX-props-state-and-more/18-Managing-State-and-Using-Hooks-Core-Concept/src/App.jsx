@@ -35,12 +35,12 @@ function App() {
         <section id="examples">
           <h2>Examples</h2>
           <menu>
-            <TabButton click={() => handleClick("Components")}>
+            <TabButton onClick={() => handleClick("Components")}>
               Components
             </TabButton>
-            <TabButton click={() => handleClick("JSX")}>JSX</TabButton>
-            <TabButton click={() => handleClick("Props")}>Props</TabButton>
-            <TabButton click={() => handleClick("State")}>State</TabButton>
+            <TabButton onClick={() => handleClick("JSX")}>JSX</TabButton>
+            <TabButton onClick={() => handleClick("Props")}>Props</TabButton>
+            <TabButton onClick={() => handleClick("State")}>State</TabButton>
             {/* <TabButton label="Components" /> */}
           </menu>
           {selectedTopic}
